@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* navbar style */
+.navbar{
+    background: linear-gradient(90deg, rgb(28,27, 27) 0%, rgb(29, 28, 28) 0%);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    /* position: fixed; */
+    top: 0;
+    /* z-index: 999; */
+}
+.navbar-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    max-width: 1500px;
+}
+.navbar-logo{
+    color: #fff;
+    justify-self: start;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 32px;
+    /* align-items: center; */
+    display: flex;
+}
+.nav-menu{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 10px;
+    list-style: none;
+    text-align: center;
+    width: 60vw;
+    justify-content: end;
+    margin-right: 32px;
+}
+.nav-item{
+    height: 80px;
+}
+
+.nav-links{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    /* note the nav-link height will adopt the nav-item height thats y it is in 100% because it is the parent element...  */
+    height: 100%;
+}
+/* Another way to call a property */
+/* .navbar > .navbar-container > .nav-menu >.nav-item > .nav-links{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    // note the nav-link height will adopt the nav-item height thats y it is in because it is the parent element...// 
+    height: 100%;
+} */
+
+.nav-links:hover{
+    border-bottom: 4px solid #f2a93b;
+}
+
+/* hero-section */
+.hero-container{
+    background: url(images/crabs.jpg);
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+}
+
+h1.home__text{
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #fff;
+}
+
+h2.home__text{
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 800;
+    color: #fff;
+}
+.home__meta{
+   padding: 25px 400px;
+}
+.button{
+    text-decoration: none;
+    text-align: center;
+    background: #f2a93b;
+    color: #fff;
+    padding:12px 53px;
+    border-radius: 50px;
+    border: none;
+    font: 20px Arial, Helevetica, Sans-serif;
+    font-weight: bold;
+}
+.button:hover{
+    color: #232323;
+}
+.about{
+    background:#000;
+}
+.container{
+    width: 82%;
+    margin:0px auto;
+    padding: 70px;
+}
+.row{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: left;
+    overflow: hidden;
+    gap: 45px;
+}
+.col__2{
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;    
+}
+img.about__img{
+    border-radius: 10px;
+    width: 100%;
+}
+h1.about__heading{
+    margin-top: 30px;
+    font-weight: 800;
+    text-align: start;
+    font-size: 40px;
+    color:#f2a93b;
+}
+.p__color{
+    color: rgba(198, 201, 216, 0.75);
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.product{
+    /* padding-bottom: 100%; */
+    background-color: #232323;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: auto;
+}
+.cardBox{
+    width: 350px;
+    height: 500px;
+    background-color: #393939;
+    margin: 10px;
+    border-radius: 10px;
+}
+.cardBox .cardImage{
+width: 100%;
+height: 250px;
+}
+.cardImage:hover img{
+    transform: translateY(100%);
+}
+
+.cardBox .cardImage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all 10s ease;
+}
+.contact{
+    background-color: #232323;
+}
+
+.c .contact__box .contact__meta h1{
+    color: #f2a93b;
+}
+
+.c .contact__box .contact__meta p{
+    color: #fff;
+}
+
+.c{
+    margin-top: 90px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    justify-content: left;
+}
+.contact__img{
+    justify-content:start;
+    margin-left: 20px;
+    text-align: left;
+}
+
+.contact__meta .email{
+    width: 100%;
+    background-image: url(magnifying-glass-edited.png);
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    object-position: 5px;
+}
+
+.contact__meta .subject{
+    width: 100%;
+    background-image: url(magnifying-glass-edited.png);
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-position:left;
+    min-width: 5px;
+}
+
+.contact__meta p{
+ margin: 5px 0 5px 0;
+}
